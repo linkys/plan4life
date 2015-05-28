@@ -22,12 +22,21 @@
     text-align: right;
 }
 
-.center-side {
-    border-right: 1px solid #e5e5e5;
+.right-side {
     border-left: 1px solid #e5e5e5;
 }
 
-#content h2 a {
+#content .side-title .glyphicon:hover {
+    cursor: pointer;
+    color: #f60;
+}
+#content .side-title .glyphicon {
+    font-size: 20px;
+}
+#content .side-title {
+    font-size: 30px;
+}
+#content .side-title a {
     text-decoration: none;
 }
 
@@ -101,6 +110,21 @@ h4 a {
     cursor: pointer;
     opacity: 0.8;
 }
-.note p div{
-
+.note p span.note-buttons{
+    margin-top: -20px;
+    display: none;
+    z-index: 99999;
+    background: #000;
+    opacity: 0.5;
+    cursor: pointer;
+    padding: 3px;
+}
+.note p>span{
+    display: block;
+    height: 20px;
+    padding: 3px;
+}
+.note input {
+    display: inline;
+    height: 28px;
 }
